@@ -94,7 +94,7 @@ Before running this application, ensure you have the following installed:
 
 1. **Clone or download the repository**
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/youyou-dev4/auto_ecole.git)
    cd auto_ecole
    ```
 
@@ -319,7 +319,7 @@ This project is open source and available under the [MIT License](LICENSE) (or s
 
 ## 👤 Author
 
-**htw**
+**Younes MATOUB**
 
 ## 🙏 Acknowledgments
 
