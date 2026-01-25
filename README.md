@@ -94,7 +94,7 @@ Before running this application, ensure you have the following installed:
 
 1. **Clone or download the repository**
    ```bash
-   git clone [<repository-url>](https://github.com/youyou-dev4/auto_ecole.git)
+   git clone https://github.com/youyou-dev4/autoEcole.git
    cd auto_ecole
    ```
 
