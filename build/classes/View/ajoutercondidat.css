@@ -1,0 +1,32 @@
+
+.ajouterCondidatButtonImage{
+    -fx-background-color:    #929081;
+    -fx-text-fill: #FFF;
+                -fx-background-radius: 20px;
+
+}
+
+.buttonConfirmation{
+    -fx-background-color:     #f4ebd0;
+                -fx-background-radius: 20px;
+}
+
+.champdateNaissance{
+        -fx-font-size: 23px;
+        -fx-margin:0px;
+        -fx-padding: 0px;
+        -fx-background-insets: 0;
+        -fx-border-insets: 0;
+        -fx-effect: null;
+}
+
+.GroupeSainguinComboBox{
+    -fx-font-size: 23px;
+}
+
+.jfx-button:hover {
+    -fx-cursor: hand; 
+    -fx-scale-x: 1.05;             /* Zoom léger */
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Ombre portée */
+}

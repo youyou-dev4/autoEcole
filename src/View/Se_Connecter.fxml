@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="860.0" stylesheets="@connexion.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Se_ConnecterController">
+   
+    <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="430.0" style="-fx-background-color: #2C3E50;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="201.0" fitWidth="415.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/auto_ecole_logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="430.0" spacing="25.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/car-89_256.gif" />
+                     </image>
+                  </ImageView>
+                  <Label text="Connexion" textFill="#2c3e50">
+                     <font>
+                        <Font name="System Bold" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="366.0" spacing="10.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" size="36" />
+                  <JFXTextField fx:id="usernameField" focusColor="#2c3e50" labelFloat="true" prefHeight="50.0" prefWidth="310.0" promptText="Nom d'utilisateur">
+                     <font>
+                        <Font name="Times New Roman" size="27.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="399.0" spacing="10.0">
+               <children>
+                  <MaterialDesignIconView glyphName="LOCK" size="36" />
+                  <JFXPasswordField fx:id="passwordField" focusColor="#2c3e50" labelFloat="true" prefHeight="50.0" prefWidth="310.0" promptText="Mot de passe">
+                     <font>
+                        <Font name="Times New Roman" size="27.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton onAction="#handleLoginClick" prefHeight="52.0" prefWidth="227.0" style="-fx-cursor: hand;" styleClass="btn-login" text="Se connecter" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfx-button:hover {
+    -fx-cursor: hand; 
+    -fx-scale-x: 1.05;             /* Zoom léger */
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Ombre portée */
+}

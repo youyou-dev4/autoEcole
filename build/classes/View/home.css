@@ -1,0 +1,218 @@
+
+
+.table-view {
+    -fx-font-family: "Arial";  /* Remplacez Arial par la police de votre choix */
+    -fx-font-size: 22px;       /* Ajustez la taille de la police */
+    -fx-text-alignment: center;
+}
+
+
+
+.Menu{
+    -fx-background-color: linear-gradient(to bottom, #c2c3a2, #403B4A);
+     
+}
+
+.btnMenu{
+    -fx-background-color:  #929081;
+    -fx-font-size: 30px;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+}
+
+.parametre_btn{
+    -fx-background-color:  #929081;
+    -fx-font-size: 22px;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+}
+
+.parametre_comboBox{
+        -fx-font-size: 22px;
+}
+
+.afficherDate{
+   font-weight: bold;
+    -fx-background-radius: 20px; 
+}
+
+.barChar{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold;
+    -fx-background-color: #929081;
+}
+
+.table-view{
+    -fx-background-color:  #929081;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #FFF;  /* Couleur orange-rouge */
+    -fx-font-weight: bold;   /* Met le texte en gras */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color:  #f4ebd0; /* Gris clair pour les lignes impaires */
+}
+
+/* Couleur des lignes paires */
+.table-view .table-row-cell:odd {
+    -fx-background-color:  #e9e2c6; /* Blanc pour les lignes paires */
+}
+
+/* Couleur de la ligne sélectionnée */
+.table-view .table-row-cell:selected {
+    -fx-background-color:  #929081; /* Bleu pour la ligne sélectionnée */
+    -fx-text-fill: white; /* Texte blanc pour la ligne sélectionnée */
+}
+
+
+.chart-bar {
+    -fx-bar-fill:  #f4ebd0; /* Couleur des barres en rouge (Tomato) */
+}
+
+
+
+/*la partie de condidat*/
+.btnGestionCondidat{
+    -fx-background-color:   linear-gradient(to bottom, #c2c3a2, #403B4A);
+    -fx-text-fill: #FFF;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+}
+
+.btnGestionCondidat2{
+    -fx-background-color:    #929081;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 20px;
+    -fx-effect: null;
+    -fx-font-weight: bold;
+    -fx-margin:0px;
+    -fx-padding: 0px;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.CondidatSeanceComboBox{
+    -fx-font-size: 18px;        
+                -fx-font-weight: bold;
+
+}
+
+.CondidatExamenComboBox{
+        -fx-font-size: 18px;
+        -fx-font-weight: bold;
+}
+
+.btnVehicule{
+     -fx-background-color:    #929081;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 20px;
+    -fx-effect: null;
+    -fx-font-weight: bold;
+    -fx-margin:0px;
+    -fx-padding: 0px;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+
+
+.jfx-button:hover {
+    -fx-cursor: hand; 
+    -fx-scale-x: 1.05;             /* Zoom léger */
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Ombre portée */
+}
+
+.btnVehicule:hover{
+    -fx-scale-x: 1;             /* Zoom léger */
+    -fx-scale-y: 1;
+    -fx-cursor: null; 
+}
+
+
+.MenuBarButton:hover{
+    -fx-cursor: hand; 
+    -fx-scale-x: 1.05;             /* Zoom léger */
+    -fx-scale-y: 1.05;
+}
+
+
+
+
+
+.userButton{
+    
+    -fx-background-color:   linear-gradient(to bottom, #c2c3a2, #403B4A);
+    -fx-text-fill: #FFF;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20px;
+}
+
+
+.datePickerVoiture, .ComboVoiture{
+        -fx-font-size: 23px;
+
+}
+
+ .SeanceComboBox{
+    -fx-font-size: 20px;
+        -fx-text-fill: #FFF;
+            -fx-background-radius: 20px;
+                -fx-font-weight: bold;
+        -fx-background-color:     #c2c3a2;
+}
+
+
+
+
+
+.SeanceDatePicker{
+    -fx-font-size: 20px;
+                -fx-font-weight: bold;
+}
+
+
+.ajouterExamenDatePicker{
+    -fx-font-size: 20px;
+}
+
+
+.titleBarButton:hover{
+    -fx-background-color:  #f4ebd0;
+    -fx-text-fill: #FFF;
+    -fx-cursor: hand; 
+}
+
+
+
+
+.agenda {
+    -fx-pref-width: 600;
+    -fx-pref-height: 400;
+    -fx-background-color:#FFD700;
+}
+
+.agenda .hour-pane {
+    -fx-background-color: #FFD700;
+    -fx-border-color: #FFD700;
+    -fx-border-width: 1;
+}
+
+.agenda .jfx-hour-cell:before {
+    -fx-background-color: #FFD700;
+}
+
+
+
+
+
+

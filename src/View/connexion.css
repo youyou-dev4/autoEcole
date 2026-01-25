@@ -1,0 +1,16 @@
+
+.btn-login {
+    -fx-background-color:  #2C3E50;
+    -fx-font-size: 22px;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 20px;
+}
+
+.btn-login:hover {
+   -fx-background-color: #34495E; /* Couleur plus claire pour le survol */
+    -fx-text-fill: #FFD700; /* Couleur du texte au survol */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 8, 0, 0, 3); /* Ombre plus prononcée au survol */
+    -fx-cursor: hand;
+}
+
+

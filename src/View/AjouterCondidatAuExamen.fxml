@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="798.0" prefWidth="760.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterCondidatAuExamenController">
+   <stylesheets>
+      <URL value="@ajoutercondidat.css" />
+   </stylesheets>
+   <children>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="1000.0" style="-fx-background-color: #f4ebd0;" AnchorPane.bottomAnchor="716.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#929081" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Candidat au examen">
+               <font>
+                  <Font name="System Bold Italic" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutX="10.0" layoutY="77.0" prefHeight="615.0" prefWidth="750.0" style="-fx-background-color: #f4ebd0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="73.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="86.0" prefWidth="750.0" spacing="100.0">
+               <children>
+                  <JFXComboBox fx:id="permis" labelFloat="true" promptText="Permis" styleClass="CondidatExamenComboBox" stylesheets="@home.css" />
+                  <JFXComboBox fx:id="epreuve" labelFloat="true" promptText="Epreuve" styleClass="CondidatExamenComboBox" stylesheets="@home.css" />
+                  <JFXComboBox fx:id="resultat" labelFloat="true" promptText="Resultat" styleClass="resultat" stylesheets="@home.css" />
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="489.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher condidat : " HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="searchField" prefHeight="31.0" prefWidth="301.0" promptText="Entrer nom de condidat" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="tableCondidat" editable="true" stylesheets="@home.css" VBox.vgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="tableCondidatNom" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="tableCondidatPrenom" prefWidth="75.0" text="Prenom" />
+                  <TableColumn fx:id="tableCondidatDateNaiss" prefWidth="75.0" text="Date naissance" />
+                  <TableColumn fx:id="tableCondidatLieuNaiss" prefWidth="75.0" text="Lieu naissance" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="101.0" prefWidth="1000.0" spacing="40.0" style="-fx-background-color: #929081;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="ExitAjouterVersementButton" onAction="#fermerFenetre" prefWidth="200.0" styleClass="buttonConfirmation" stylesheets="@ajoutercondidat.css" text="EXIT" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="EnregistrerVersementButton" prefWidth="200.0" styleClass="buttonConfirmation" stylesheets="@ajoutercondidat.css" text="ENREGISTRER" textAlignment="CENTER" textFill="#09ff00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
