@@ -101,7 +101,7 @@ Before running this application, ensure you have the following installed:
 2. **Set up MySQL Database**
    - Create a MySQL database named `auto_ecole`
    - Import the database schema using the provided documentation:
-     📄 [Database Architecture & Schema (PDF)](your_file_name.pdf)
+     📄 [Database Architecture & Schema (PDF)](shema_bdd.pdf)
    - See [Database Setup](#database-setup) for more details
 
 3. **Configure Database Connection**
